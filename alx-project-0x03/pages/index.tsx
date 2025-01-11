@@ -1,9 +1,8 @@
-// pages/index.tsx
 import { useRouter } from "next/router";
 import Button from "@/components/common/Button";
 import { PageRouteProps } from "@/interface";
 
-const Home = () => {
+export default function Home() {
   const router = useRouter();
 
   // Imperative routing with useRouter
@@ -41,5 +40,3 @@ const Home = () => {
     </div>
   );
 }
-
-export default Home;
